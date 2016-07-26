@@ -4,9 +4,10 @@
 
 <hr />
 
-<form>
+<form><!-- could use ng-submit to handle enter key as well -->
   <input data-ng-model="LocationShowViewModel.comment.body" placeholder="Write comment here"></input>
   <input data-ng-model="LocationShowViewModel.comment.author" placeholder="Author"></input>
+  <!-- excellent! In the future, consider adding a user model w/ authentication -->
   <button data-ng-click="LocationShowViewModel.create()" type="submit">Create Comment</button>
 </form>
 

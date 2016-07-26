@@ -3,6 +3,7 @@
   <input data-ng-model="LocationEditViewModel.location.name" placeholder="Name"></input>
   <input data-ng-model="LocationEditViewModel.location.address" placeholder="Address"></input>
   <input data-ng-model="LocationEditViewModel.location.description" placeholder="Description"></input>
-  <button data-ng-click="LocationEditViewModel.update()" type="submit">Update Location</button>
-  <button data-ng-click="LocationEditViewModel.destroy()" type="submit">Delete Location</button>
+  <button data-ng-click="LocationEditViewModel.update(LocationEditViewModel.location)" type="submit">Update Location</button>
+  <button data-ng-click="LocationEditViewModel.destroy(LocationEditViewModel.location)" type="submit">Delete Location</button>
+  <!-- to prevent two ajax requests in those methods -->
 </form>

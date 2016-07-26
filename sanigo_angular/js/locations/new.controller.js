@@ -31,6 +31,7 @@
     //     console.log(response)
     //     $state.go("locationIndex");
     //   })
+    //   remove unused code
     // }
 
   }

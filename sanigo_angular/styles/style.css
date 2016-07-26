@@ -4,13 +4,7 @@
 body{
   background-color: #D0D2D5;
 }
-h1{
-  text-align: center;
-}
-h4{
-  text-align: center;
-}
-body{
+h1, h4, body{
   text-align: center;
 }
 .toilet{

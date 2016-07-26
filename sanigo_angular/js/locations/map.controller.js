@@ -12,6 +12,7 @@
     var marker;
     vm.initMap = function() {
       var latlng = new google.maps.LatLng(38.904864, -77.033996);
+      // can you think of a way to get those coordinates from user input?
       var myOptions = {
         zoom: 18,
         center: latlng,
@@ -24,7 +25,7 @@
         console.log(locations)
 
         locations.forEach(function(location){
-          var image = 'http://i.imgur.com/MuAdxDX.png';
+          var image = 'http://i.imgur.com/MuAdxDX.png'; // download this image
           var markerLatLng = new google.maps.LatLng(location.latitude, location.longitude)
 
           var infowindow = new google.maps.InfoWindow({
@@ -32,7 +33,7 @@
           });
 
           var marker = new google.maps.Marker({
-            animation: google.maps.Animation.DROP,
+            animation: google.maps.Animation.DROP, // nice!
             position: markerLatLng,
             icon: image,
             title: "<a data-ui-sref='locationShow({id:" + location.id + "})'>" + location.name + "</a>"

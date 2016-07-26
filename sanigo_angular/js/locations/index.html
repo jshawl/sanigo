@@ -1,8 +1,10 @@
-<img class="logo" src="http://i.imgur.com/dmTjhOW.png" />
+<img class="logo" src="http://i.imgur.com/dmTjhOW.png" alt=""/>
+<!-- ^^ download this image to prevent 404 -->
 
 <h2>Locations</h2>
 
 <div data-ng-repeat="location in LocationIndexViewModel.locations track by $index">
+<!-- nice use of track by! Is this preventing some other error? -->
   <h3>{{location.name}} </h3>
   <p>{{location.address}} </p>
   <a data-ui-sref="locationEdit({id: location.id})">Edit/Delete</a>
